@@ -1,0 +1,10 @@
+{
+  "name": "test.input.system",
+  "version": "2024.3.0",
+  "displayName": "Test.Input.System",
+  "description": "Package setup to reproduce invalid New Input System usage detection when installing UPM packages",
+  "unity": "2020.3",
+  "dependencies": {},
+  "keywords": [],
+  "author": {}
+}
