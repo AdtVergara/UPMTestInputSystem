@@ -2,6 +2,14 @@
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
 
+public struct DeviceInfoApiMethod
+{
+    public const string UnityInputSystem = "unity-inputsystem";
+    public const string UnityLegacyInputManager = "unity-legacy";
+    public const string NativeWMI = "native-wmi";
+    public const string Other = "other";
+}
+
 public class TestInputSystem
 {
     public string[] GetDevices()
@@ -26,6 +34,7 @@ public class TestInputSystem
                     break;
             }
         }
+        UnityEngine.Debug.Log(DeviceInfoApiMethod.UnityInputSystem);
         return devices.ToArray();
     }
 }
